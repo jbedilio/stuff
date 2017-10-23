@@ -1,0 +1,30 @@
+{
+  "name": "ridez",
+  "version": "1.0.0",
+  "description": "carpoolapplication",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbedilio/stuff.git"
+  },
+  "keywords": [
+    "ride",
+    "share",
+    "ride",
+    "share",
+    "car",
+    "pool",
+    "car",
+    "pool"
+  ],
+  "author": "joshuambedilion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbedilio/stuff/issues"
+  },
+  "homepage": "https://github.com/jbedilio/stuff#readme"
+}
