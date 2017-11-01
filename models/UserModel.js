@@ -2,28 +2,24 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-//make UserSchema a Schema
+//making UserSchema a Schema
 var UserSchema = new Schema ({
-    //username trimmed required string
     username: {
         type: String,
         trim: true,
         required: 'Please create a user name.'
     },
-    //password
     password: {
         type: String,
         trim: true,
         required: 'Please enter a password.'
     },
-    //firstname is a trimmed required string
-    firstname: {
+    firstName: {
         type: String,
         trim: true,
         required: 'Please enter your first name.'
     },
-    //lastname is a trimmed required string
-    lastname: {
+    lastName: {
         type: String,
         trim: true,
         required: 'Please enter your last name.'
@@ -37,12 +33,18 @@ var UserSchema = new Schema ({
         type: Date,
         default: Date.now
     },
-    //smoking
+    //do you smoke?
     smoker: {
         type: Boolean,
         defualt: false,
     },
-    ratings: [{
+    openSeats: {
+        type: Number,
+        min: 1,
+        max: 7
+    },
+    //rated by other users
+    rating: [{
         type: Schema.Types.ObjectId,
         ref: 'Rating'
     }]
