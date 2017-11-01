@@ -13,7 +13,7 @@ var PORT = process.env.PORT || 3000;
 var app = express();
 
 //serve static content for the app from the "public" directory in the app directory
-app.use(express.static('client/build'));
+app.use(express.static('public'));
 
 //setting the instance of express to use body-parser
 app.use(bp.urlencoded({extended: true}));
